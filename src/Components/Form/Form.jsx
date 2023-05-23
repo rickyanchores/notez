@@ -15,10 +15,10 @@ const Form = ({input,setInput,notes,setNotes}) => {
     }
 
   return (
-    <div className='Form'>
+    <form className='Form'>
         <input value={input} className='input font-bold' input="/" type="text" placeholder='Write here' onChange={inputChange}/>
         <button className="btn ml-5" onClick={addNote} >+</button>
-    </div>
+    </form>
   )
 }
 
