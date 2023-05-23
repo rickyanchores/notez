@@ -1,16 +1,23 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
+
 import './App.css'
+import Form from "./Components/Form/Form";
+import Notes from './Components/Note/Notes';
 
 function App() {
   const [count, setCount] = useState(0)
 
+
+  const [input,setInput] = useState("")
+  const [notes,setNotes] = useState([])
+
   return (
     <>
-      <div>
-        <h3>Hello</h3>
+      <div className='App bg-slate-600 p-12 font-bold'>
+        <h3>Hello </h3>
         <p>Vite + Tailwindcss + Scss</p>
+        <Form input={input} setInput={setInput} notes={notes} setNotes={setNotes}/>
+        <Notes notes={notes} setNotes={setNotes}/>
       </div>
     </>
   )
