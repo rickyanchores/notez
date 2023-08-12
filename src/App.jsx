@@ -14,8 +14,8 @@ function App() {
 
   return (
     <>
-      <div className='App bg-slate-600 p-20 font-bold'>
-        <h3>Notes v3</h3>
+      <div className='App bg-slate-800 p-20 font-bold rounded-lg m-5'>
+        <h3 className="title hover:text-orange-600">Notes v3</h3>
         <p>Vite + Tailwindcss + Scss</p>
         <Form input={input} setInput={setInput} notes={notes} setNotes={setNotes}/>
         <Notes notes={notes} setNotes={setNotes}/>
