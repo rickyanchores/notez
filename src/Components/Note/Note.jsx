@@ -9,8 +9,8 @@ const Note = ({text,setNotes,notes,note}) => {
 
   return (
     <div className='Note'>
-      <li className='bg-slate-500 mt-5 p-5 flex justify-between rounded-lg'>
-        <h3>{text}</h3>
+      <li className='bg-slate-800 mt-5 p-5 flex flex-wrap justify-between rounded-lg'>
+        <h3 className='m-2'>{text}</h3>
         <button className="btn hover:bg-red-700" onClick={remover}>Remove</button>
       </li>
     </div>

@@ -14,13 +14,13 @@ function App() {
 
   return (
     <>
-      <div className='App bg-slate-800 p-20 font-bold rounded-lg m-5'>
-        <h3 className="title hover:text-orange-600">Notes v3</h3>
+      <div className='App p-20 font-bold rounded-lg m-5'>
+        <h1 className="title hover:text-orange-600 text-lg">Notes v3</h1>
         <p>Vite + Tailwindcss + Scss</p>
         <Form input={input} setInput={setInput} notes={notes} setNotes={setNotes}/>
         <Notes notes={notes} setNotes={setNotes}/>
       </div>
-      <h3 className="bg-slate-800">Developed by Ricky A</h3>
+      <h3 className="footer">Developed by Ricky A</h3>
     </>
   )
 }

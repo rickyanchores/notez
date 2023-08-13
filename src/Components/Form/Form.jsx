@@ -16,8 +16,8 @@ const Form = ({input,setInput,notes,setNotes}) => {
 
   return (
     <form className='Form'>
-        <input value={input} className='input font-bold' input="/" type="text" placeholder='Write here' onChange={inputChange}/>
-        <button className="btn ml-5" onClick={addNote} >+</button>
+        <input value={input} className='input font-bold p-5 mt-5' input="/" type="text" placeholder='Type notes' onChange={inputChange}/>
+        <button className="btn ml-5 animate-pulse" onClick={addNote} >+</button>
     </form>
   )
 }
