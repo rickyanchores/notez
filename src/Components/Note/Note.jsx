@@ -8,10 +8,10 @@ const Note = ({text,setNotes,notes,note}) => {
   }
 
   return (
-    <div className='Note'>
+    <div className='Note w-5/8'>
       <li className='bg-slate-800 mt-5 p-5 flex flex-wrap justify-between rounded-lg'>
-        <h3 className='m-2'>{text}</h3>
-        <button className="btn hover:bg-red-700" onClick={remover}>Remove</button>
+        <h3 className='m-2 p-2'>{text}</h3>
+        <button className="btn hover:bg-red-700 m-2" onClick={remover}>Remove</button>
       </li>
     </div>
   )

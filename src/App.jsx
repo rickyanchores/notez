@@ -14,8 +14,8 @@ function App() {
 
   return (
     <>
-      <div className='App p-20 font-bold rounded-lg m-5'>
-        <h1 className="title hover:text-orange-600 text-lg">Notes v3</h1>
+      <div className='App p-20 font-bold rounded-lg m-auto'>
+        <h1 className="title text-orange-700 hover:animate-pulse text-lg-200">NOTEZ</h1>
         <p>Vite + Tailwindcss + Scss</p>
         <Form input={input} setInput={setInput} notes={notes} setNotes={setNotes}/>
         <Notes notes={notes} setNotes={setNotes}/>

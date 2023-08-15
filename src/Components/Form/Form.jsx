@@ -17,7 +17,7 @@ const Form = ({input,setInput,notes,setNotes}) => {
   return (
     <form className='Form'>
         <input value={input} className='input font-bold p-5 mt-5' input="/" type="text" placeholder='Type notes' onChange={inputChange}/>
-        <button className="btn ml-5 animate-pulse" onClick={addNote} >+</button>
+        <button className="btn m-5 animate-pulse" onClick={addNote} >+</button>
     </form>
   )
 }
